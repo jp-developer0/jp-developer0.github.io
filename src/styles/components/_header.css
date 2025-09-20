@@ -1,0 +1,410 @@
+/* Estilos del header principal */
+.header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--color-bg-primary) 0%,
+    var(--color-bg-secondary) 100%
+  );
+  overflow: hidden;
+}
+
+/* Efecto de fondo animado */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(18, 214, 64, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 193, 7, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(158, 127, 37, 0.05) 0%, transparent 50%);
+  z-index: 1;
+}
+
+.header .container {
+  position: relative;
+  z-index: 2;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Título principal */
+.header-title {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-6);
+  line-height: var(--line-height-tight);
+}
+
+.header-title a {
+  color: var(--color-text-primary);
+  background: linear-gradient(
+    135deg,
+    var(--color-text-primary) 0%,
+    var(--color-primary-light) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all var(--transition-normal);
+}
+
+.header-title a:hover {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-accent) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(-2px);
+}
+
+/* Subtítulo con animación de typing */
+.header-subtitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-12);
+}
+
+.typing-text {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  position: relative;
+}
+
+.typing-text::after {
+  content: '|';
+  color: var(--color-primary);
+  animation: blink 1s infinite;
+  font-weight: normal;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Navegación principal */
+.main-nav {
+  margin-bottom: var(--space-12);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.nav-link {
+  position: relative;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  transition: all var(--transition-normal);
+  transform: translateX(-50%);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: var(--color-primary);
+  background: rgba(18, 214, 64, 0.1);
+}
+
+.nav-link:hover::before,
+.nav-link:focus::before,
+.nav-link.active::before {
+  width: 80%;
+}
+
+/* Enlaces sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xl);
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: var(--color-primary);
+  color: var(--color-text-primary);
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(18, 214, 64, 0.3);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform var(--transition-fast);
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+/* Menú móvil */
+.mobile-nav-toggle {
+  position: fixed;
+  top: var(--space-4);
+  right: var(--space-4);
+  z-index: var(--z-fixed);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-toggle:hover {
+  background: rgba(18, 214, 64, 0.2);
+}
+
+.hamburger {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--color-text-primary);
+  margin: 2px 0;
+  transition: all var(--transition-fast);
+  border-radius: 1px;
+}
+
+/* Animación del menú hamburguesa */
+.mobile-nav-toggle.active .hamburger:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.mobile-nav-toggle.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle.active .hamburger:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Header fixed cuando se hace scroll */
+.header.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  min-height: auto;
+  background: rgba(1, 14, 27, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: var(--z-fixed);
+  transition: all var(--transition-normal);
+}
+
+.header-scrolled .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  max-width: none;
+}
+
+.header-scrolled .header-title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: 0;
+}
+
+.header-scrolled .header-subtitle,
+.header-scrolled .social-links {
+  display: none;
+}
+
+.header-scrolled .main-nav {
+  margin-bottom: 0;
+}
+
+.header-scrolled .nav-list {
+  gap: var(--space-4);
+}
+
+.header-scrolled .nav-link {
+  font-size: var(--font-size-base);
+  padding: var(--space-2) var(--space-3);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(1, 14, 27, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: var(--z-modal);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+  }
+
+  .main-nav.active .nav-list {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    font-size: var(--font-size-2xl);
+    padding: var(--space-4) var(--space-6);
+  }
+
+  .header-scrolled .main-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .header-subtitle {
+    font-size: var(--font-size-xl);
+  }
+
+  .social-link {
+    width: 44px;
+    height: 44px;
+    font-size: var(--font-size-lg);
+  }
+
+  .social-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .container {
+    padding: var(--space-4) var(--space-4);
+  }
+
+  .header-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .header-subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .nav-list {
+    gap: var(--space-6);
+  }
+
+  .nav-link {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-title {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.header-subtitle {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.main-nav {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.social-links {
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}

@@ -1,804 +1,1146 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <!-- Meta información básica -->
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Juan Pablo González - Ingeniero de Software especializado en desarrollo full-stack, machine learning y blockchain. Portfolio personal con proyectos y experiencia profesional.">
+  <meta name="keywords" content="Juan Pablo González, software engineer, full-stack developer, machine learning, blockchain, portfolio, Argentina">
+  <meta name="author" content="Juan Pablo González">
 
-  <title>Personal Portfolio</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Juan Pablo González - Ingeniero de Software">
+  <meta property="og:description" content="Portfolio personal de Juan Pablo González, ingeniero de software especializado en desarrollo full-stack y machine learning">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jp-developer0.github.io/">
+  <meta property="og:image" content="https://jp-developer0.github.io/assets/img/me.jpg">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juan Pablo González - Ingeniero de Software">
+  <meta name="twitter:description" content="Portfolio personal especializado en desarrollo full-stack y machine learning">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <title>Juan Pablo González - Ingeniero de Software | Portfolio</title>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="apple-touch-icon" href="./favicon.png">
 
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="./manifest.json">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Meta tags para PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="JP Portfolio">
+  <meta name="application-name" content="JP Portfolio">
+  <meta name="msapplication-TileColor" content="#12d640">
+  <meta name="theme-color" content="#12d640">
+
+  <!-- Preconnect para optimización de carga -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <!-- Google Fonts optimizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="./styles.css" rel="stylesheet">
+
+  <!-- JSON-LD para SEO estructurado -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan Pablo González",
+    "jobTitle": "Ingeniero de Software",
+    "url": "https://jp-developer0.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/jp-gonzalez",
+      "https://github.com/jp-developer0"
+    ],
+    "email": "juan.gonzalez.working@gmail.com",
+    "telephone": "+54-9-11-2315-6009",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buenos Aires",
+      "addressCountry": "Argentina"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Tecnológica Nacional"
+    }
+  }
+  </script>
+
+  <!-- Analytics optimizado -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-169007209-3');
   </script>
-
-
-
-  <!-- =======================================================
-  * Template Name: Personal - v2.1.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
-  
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
+  <!-- Skip to main content para accesibilidad -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
+  <!-- Header principal -->
+  <header id="header" class="header">
     <div class="container">
+      <div class="header-content">
+        <h1 class="header-title">
+          <a href="#header" aria-label="Volver al inicio">Juan Pablo González</a>
+        </h1>
+        <p class="header-subtitle">
+          Soy <span class="typing-text"></span>
+        </p>
 
-      <h1><a href="index.html">Juan Pablo Gonzalez</a></h1>
-      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#material"><span>Material</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-<!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="https://www.google.com" target="_blank"> <span>Resume</span></a></li>
-          <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
-          <li><a href="#contacts"> <span>Contact</span></a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <div class="social-links">
-          <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.github.com/" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:juan.gonzalez.working@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
-
-  <!-- ======= Material Section ======= -->
-  <section id="material" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Material</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="documents/gerencia/logo.jpg" class="img-fluid" alt="" width="500" height="600">
-            <h5 style="text-align:left;padding: 0px 10px;">General Manager</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Enjoy topis like: </h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>Types of Managers</li>
-              <li>Types of Organization Structures</li>
-              <li>Ideas od Mintzberg and Sallenave</li>
-              <li>Negotiations</li>
-            </ul>
-            <a href="documents/gerencia/Gerente_General.pdf" target="_blank">Click here to see Document</a>
-          </div>
-            
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="documents/ia/screen.jpg" class="img-fluid" alt="" width="500" height="600">
-            
-            <h5 style="text-align:left;padding: 0px 10px;">An Introduction of Artificial Intelligence</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Here you will see: </h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>What's an Inteligent System</li>
-              <li>Algorithm Evolvement</li>
-              <li>Machine Learning</li>
-            </ul>
-            <a href="documents/ia/IA-SI_2C2021.pdf" target="_blank">Open IA Material</a>
-          </div>
-          
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="documents/insertidumbre/screen.jpg" class="img-fluid" alt="" width="500" height="600">
-            
-            <h5 style="text-align:left;padding: 0px 10px;">Uncertainty in Software Projects</h5>
-
-            <a href="documents/insertidumbre/04-EstimacionesDeSoftware.pdf" target="_blank">See Document Content</a>
-          </div>
-            
-            
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="documents/pnl/screen.jpg" class="img-fluid" alt="" width="500" height="600">
-            
-            <h5 style="text-align:left;padding: 0px 10px;">PNL - Programacion Neuto Linguistica</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Material about PNL where you will see:</h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>Comunication Methods</li>
-              <li>Verbal and Corporal Languaje</li>
-              <li>Rapport</li>
-              <li>Bussiness Application</li>
-            </ul>
-            <a href="documents/pnl/PNL_Comunicacion_2015.pdf" target="_blank">Watch Documentation Clicking Here</a>
-          </div>
-
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="documents/coe/screen.jpg" class="img-fluid" alt="" width="500" height="600">
-            
-            <h5 style="text-align:left;padding: 0px 10px;">Effective Oral Communication</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Here there are many thing to catch, like:</h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>Facial Expresion</li>
-              <li>Visual Contact</li>
-              <li>Fear and Nervousness</li>
-              <li>Modals and Formalism</li>
-            </ul>
-            <a href="documents/coe/TC_2004_04_Tips_Oratoria.pdf" target="_blank">Watch Documentation Clicking Here</a>
-          </div>
-
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="documents/adr/cap.jpg" class="img-fluid" alt="" width="500" height="600">
-            
-            <h5 style="text-align:left;padding: 0px 10px;">Resources Management</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">In this section you can see: </h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>Systems Architecture</li>
-              <li>Risk Management in Organizations</li>
-              <li>Project Management</li>
-              <li>Usefull Technologies for Companies</li>
-            </ul>
-            <a href="documents/adr/adr.pdf" target="_blank">Click here to Learn</a>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-          
-<!--
-    <div class="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2>Online Certification</h2>
-      </div>
-
-      <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-
-         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/stanford.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Machine Learning</h4>
-              <div class="portfolio-links">
-              <embed src="documents/Java_IAC.pdf" width="500" height="375" 
- type="application/pdf">
-            </div>
-           </div>
-          </div>
-      </div>
-    </div>
-    </div>
--->
-  </section>
-  <!-- End Material Section -->
-
-
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="" width="350" height="500">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>Im a young enginner focused in helping industries trougth technology. 
-            I take part of important projects for society advance and 
-            I love doing partnerships with profesional people and sharing common goals.
-            Lets Learn together ! 
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 5 August 1994</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +54 9 11 2315 6009</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Argentina</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> juan.gonzalez.working@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-global-line" style="color: #ffbb2c;"></i>
-            <h3>Software Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #5578ff;"></i>
-            <h3>Machine Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-camera-3-line" style="color: #e80368;"></i>
-            <h3>Computer Vision</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-english-input" style="color: #1c7d32;"></i>
-            <h3>Natural Language Processing</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
-            <h3>Software Engineering</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #f1081f;"></i>
-            <h3>Visualization</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
-            <h3>Algorithms</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-image-line" style="color: #ffc107;"></i>
-            <h3>Image Processing</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
-
-
-
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="assets/img/education/ieee.png" class="img-fluid" alt="" width="500" height="600">
-            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>The world's largest technical professional community</em></p>
-            <h5 style="text-align:left;padding: 0px 10px;">year: 2021 </h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Click to see Certificates</h6>
-            <ul style="text-align:left;color:#fff;">
-              <li><a href="documents/Java8_Maven.pdf" target="_blank">Git - Maven - InteliJ</a></li>
-              <li><a href="documents/Api_REST.pdf" target="_blank">API REST</a></li>
-              <li><a href="documents/ORM_Java.pdf" target="_blank">Java - ORM - Hibernate</a></li>
-              <li><a href="documents/Spark_Java.pdf" target="_blank">Web Arquitecture - Spark</a></li>
-            </ul>
-          </div>
-            
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="assets/img/education/Java-Logo.png" class="img-fluid" alt="" width="500" height="600">
-            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>Java Developer in Argentine Institute Computer</em></p>
-            <h5 style="text-align:left;padding: 0px 10px;">2018 year</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>Java Backend Development</li>
-              <li>Angular FrontEnd Development</li>
-              <li>Spring Deployment</li>
-            </ul>
-            <a href="documents/Java_IAC.pdf" target="_blank">Open Certificate</a>
-          </div>
-          
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="assets/img/education/utn.png" class="img-fluid" alt="" width="500" height="600">
-            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>Software Systems Enginner at National Technological University</em></p>
-            <h5 style="text-align:left;padding: 0px 10px;">Janurary 2018 - December 2023</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>Systems Analisis</li>
-              <li>RH Management</li>
-              <li>Software Architecture</li>
-            </ul>
-            <a href="documents/Plan de estudios.pdf" target="_blank">See Career Content</a>
-          </div>
-            
-            
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="assets/img/education/python.jpg" class="img-fluid" alt="" width="500" height="600">
-            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>Python Developer IEEE</em></p>
-            <h5 style="text-align:left;padding: 0px 10px;">2020 Year</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-            <ul style="text-align:left;color:#fff;">
-              <li>Python Algorithms</li>
-              <li>Big Data</li>
-              <li>Machine Learning</li>
-            </ul>
-            <a href="documents/Juan Gonzalez_python.pdf" target="_blank">Open Certificate</a>
-          </div>
-        </div>
-      </div>
-    </div>
-          
-<!--
-    <div class="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2>Online Certification</h2>
-      </div>
-
-      <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-
-         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/stanford.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Machine Learning</h4>
-              <div class="portfolio-links">
-              <embed src="documents/Java_IAC.pdf" width="500" height="375" 
- type="application/pdf">
-            </div>
-           </div>
-          </div>
-      </div>
-    </div>
-    </div>
--->
-  </section>
-  <!-- End Education Section -->
-
-
-
-  <!-- Start Experience Section -->
-
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.riskiq.com/" target="_blank" style="color:#12d640">RiskIq</a><br> </h4>
-                <h5 style="text-align:left;">January 2021 - Present</h5>
-                <p style="text-align:left;color:#fff"><em>Sr. FullStack Developer (Java - React)  </em></p>
-                <ul style="text-align:left;">
-                  <li>Java 8 Springboot – React Frontend – hibernate ActiveMq Rabbit reddis.</li>
-                  <li>Agile Scrum Jira Github PR.</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.tgv.com.ar/" target="_blank" style="color:#12d640">TGV Excelencia en Soluciones Informaticas</a><br> </h4>
-                <h5 style="text-align:left;">Mar 2018 - Dec 2020</h5>
-                <p style="text-align:left;color:#fff"><em>Ssr. Backend Java Developer</em></p>
-                <ul style="text-align:left;">
-                  <li>Java development with primefaces hibernate spring jdbc sqlDeveloper, springBoot, Spring.</li>
-                  <li>Angular 2+  . Using MVC.</li>
-                  <li>Angular typescript. Rest. Soap.</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.foxtv.es/" target="_blank" style="color:#12d640">Fox Channel</a><br> </h4>
-                <h5 style="text-align:left;">Jan 2017 - May 2017</h5>
-                <p style="text-align:left;color:#fff"><em>Fox Cannel Java Developer</em></p>
-                <ul style="text-align:left;">
-                  <li>Java development and maintenance Support FoxPlay App.</li>
-                  <li>Limit TimeSet Job</li>
-                  <li>3 Persons in charge.</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.accenture.com/ar-es" target="_blank" style="color:#12d640">Accenture</a><br> </h4>
-                <h5 style="text-align:left;">Dec 2015 - Oct 2016</h5>
-                <p style="text-align:left;color:#fff"><em>Analyst programmer Lvl 13</em></p>
-                <ul style="text-align:left;">
-                  <li> Development java bases hadoop foreign team </li>
-                  <li>2 Persons in charge.</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.mapfre.com.ar/" target="_blank" style="color:#12d640">Mapfre Life Ensurance</a><br> </h4>
-                <h5 style="text-align:left;">Nov 2013 - Nov 2014</h5>
-                <p style="text-align:left;color:#fff"><em>Software developer Java</em></p>
-                <ul style="text-align:left;">
-                  <li>Development of webServices in java, with spring hibernate axis2 struts xml</li>
-                  <li>Test server management and production with linux</li>
-                  <li>Development of oracle package in plsql</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://centinelapc.com.ar/" target="_blank" style="color:#12d640">CentinelaPC</a><br> </h4>
-                <h5 style="text-align:left;">Feb 2013 - Nov 2013</h5>
-                <p style="text-align:left;color:#fff"><em>VB6 Developer and Java Development</em></p>
-                <ul style="text-align:left;">
-                  <li> Development and maintenance of client applications, in java, vb6, </li>
-                  <li>with bases of mysql and Microsoft Access</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-    </div>
-  </section>
-
-  <!-- End Experience Section -->
-
-
-
-  <!-- Start Project Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Web-App</li>
-            <li data-filter=".filter-project">Project</li>
+        <!-- Navegación principal -->
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#header" class="nav-link active" aria-current="page">
+              <span class="nav-text">Inicio</span>
+            </a></li>
+            <li><a href="#about" class="nav-link">
+              <span class="nav-text">Acerca de</span>
+            </a></li>
+            <li><a href="#material" class="nav-link">
+              <span class="nav-text">Material</span>
+            </a></li>
+            <li><a href="#education" class="nav-link">
+              <span class="nav-text">Educación</span>
+            </a></li>
+            <li><a href="#experience" class="nav-link">
+              <span class="nav-text">Experiencia</span>
+            </a></li>
+            <li><a href="#portfolio" class="nav-link">
+              <span class="nav-text">Proyectos</span>
+            </a></li>
+            <li><a href="#skills" class="nav-link">
+              <span class="nav-text">Habilidades</span>
+            </a></li>
+            <li><a href="#contact" class="nav-link">
+              <span class="nav-text">Contacto</span>
+            </a></li>
           </ul>
-        </div>
-      </div>
+        </nav>
 
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Blockchain Voting System </h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/Blocktar.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/blocktar.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Fraud Detection ML IA</h4></center>
-          <div class="portfolio-wrap">
-            <img src="documents/TASD/fraud_ML.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/machineLearning.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Music Streaming Website</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/musicplayer.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Movie Recommender</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              
-              <div class="portfolio-links">
-                <a href="projects/recommender.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>To-Do App</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/todo.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/todo.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <!-- <br> -->
-          <center><h4>Resume Section Classifier</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Resume Section Classifier</h4>
-              <div class="portfolio-links">
-                <a href="projects/resume.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <br>
-          <center><h4>Tech Blog</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/blog.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/blog.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Video Description Generator</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/vdg.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>ML-DL Web-App</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/ml.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <!-- <br> -->
-          <center><h4>Image Generator</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/gan.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <!-- Enlaces sociales -->
+        <aside class="social-links" aria-label="Enlaces a redes sociales">
+          <a href="https://www.linkedin.com/in/jp-gonzalez"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="social-link linkedin"
+             aria-label="Perfil de LinkedIn">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/jp-developer0"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="social-link github"
+             aria-label="Perfil de GitHub">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="mailto:juan.gonzalez.working@gmail.com"
+             class="social-link email"
+             aria-label="Enviar email">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.636l8.728 6.545 8.728-6.545h1.636c.904 0 1.636.732 1.636 1.636z"/>
+            </svg>
+          </a>
+        </aside>
       </div>
     </div>
-  </section>
 
-  <!-- End Project Section -->
+    <!-- Botón de menú móvil -->
+    <button type="button" class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+  </header>
 
+  <!-- Contenido principal -->
+  <main id="main-content">
 
+    <!-- Sección Material -->
+    <section id="material" class="section material-section" aria-labelledby="material-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="material-title" class="section-title">Material Educativo</h2>
+          <p class="section-description">Recursos y documentación técnica que he desarrollado</p>
+        </header>
 
-  <!-- Start Skills Section -->
+        <div class="material-grid">
+          <article class="material-card">
+            <img src="documents/gerencia/logo.jpg"
+                 alt="Documento sobre Gerencia General"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Gerencia General</h3>
+              <p class="material-description">Conceptos fundamentales de gestión:</p>
+              <ul class="material-topics">
+                <li>Tipos de Gerentes</li>
+                <li>Estructuras Organizacionales</li>
+                <li>Ideas de Mintzberg y Sallenave</li>
+                <li>Técnicas de Negociación</li>
+              </ul>
+              <a href="documents/gerencia/Gerente_General.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="Ver documento de Gerencia General">
+                Ver Documento
+              </a>
+            </div>
+          </article>
 
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
+          <article class="material-card">
+            <img src="documents/ia/screen.jpg"
+                 alt="Introducción a la Inteligencia Artificial"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Introducción a la Inteligencia Artificial</h3>
+              <p class="material-description">Fundamentos de IA y sistemas inteligentes:</p>
+              <ul class="material-topics">
+                <li>Sistemas Inteligentes</li>
+                <li>Evolución de Algoritmos</li>
+                <li>Machine Learning</li>
+              </ul>
+              <a href="documents/ia/IA-SI_2C2021.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="Ver material de Inteligencia Artificial">
+                Abrir Material
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <img src="documents/insertidumbre/screen.jpg"
+                 alt="Incertidumbre en Proyectos de Software"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Incertidumbre en Proyectos de Software</h3>
+              <p class="material-description">Gestión de riesgos y estimaciones</p>
+              <a href="documents/insertidumbre/04-EstimacionesDeSoftware.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="Ver documento sobre incertidumbre en software">
+                Ver Contenido
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <img src="documents/pnl/screen.jpg"
+                 alt="Programación Neuro Lingüística"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Programación Neuro Lingüística</h3>
+              <p class="material-description">Técnicas de comunicación efectiva:</p>
+              <ul class="material-topics">
+                <li>Métodos de Comunicación</li>
+                <li>Lenguaje Verbal y Corporal</li>
+                <li>Rapport</li>
+                <li>Aplicación Empresarial</li>
+              </ul>
+              <a href="documents/pnl/PNL_Comunicacion_2015.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="Ver documentación de PNL">
+                Ver Documentación
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <img src="documents/coe/screen.jpg"
+                 alt="Comunicación Oral Efectiva"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Comunicación Oral Efectiva</h3>
+              <p class="material-description">Técnicas de oratoria y presentación:</p>
+              <ul class="material-topics">
+                <li>Expresión Facial</li>
+                <li>Contacto Visual</li>
+                <li>Manejo del Miedo</li>
+                <li>Modalidades y Formalismo</li>
+              </ul>
+              <a href="documents/coe/TC_2004_04_Tips_Oratoria.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="Ver documentación de comunicación oral">
+                Ver Documentación
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card">
+            <img src="documents/adr/cap.jpg"
+                 alt="Gestión de Recursos"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Gestión de Recursos</h3>
+              <p class="material-description">Arquitectura y gestión empresarial:</p>
+              <ul class="material-topics">
+                <li>Arquitectura de Sistemas</li>
+                <li>Gestión de Riesgos</li>
+                <li>Gestión de Proyectos</li>
+                <li>Tecnologías Empresariales</li>
+              </ul>
+              <a href="documents/adr/adr.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="Ver material de gestión de recursos">
+                Acceder al Material
+              </a>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="vectorlogo.zone" height="50" width="150">
-                  <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="vectorlogo.zone" height="50" width="120">
-                  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="90">
-                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
-                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="vectorlogo.zone" height="50" width="190">
+    </section>
 
+    <!-- Sección Acerca de -->
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="about-title" class="section-title">Acerca de Mí</h2>
+        </header>
+
+        <div class="about-content">
+          <div class="about-image-container">
+            <img src="assets/img/me.jpg"
+                 alt="Juan Pablo González - Ingeniero de Software"
+                 class="about-image"
+                 loading="lazy">
+          </div>
+
+          <div class="about-text">
+            <p class="about-description">
+              Soy un joven ingeniero enfocado en ayudar a las industrias a través de la tecnología.
+              Participo en proyectos importantes para el avance de la sociedad y me encanta formar
+              alianzas con personas profesionales compartiendo objetivos comunes. ¡Aprendamos juntos!
+            </p>
+
+            <div class="about-details">
+              <div class="detail-group">
+                <ul class="detail-list">
+                  <li class="detail-item">
+                    <span class="detail-label">Nacimiento:</span>
+                    <span class="detail-value">5 Agosto 1994</span>
+                  </li>
+                  <li class="detail-item">
+                    <span class="detail-label">Teléfono:</span>
+                    <span class="detail-value">+54 9 11 2315 6009</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <ul class="detail-list">
+                  <li class="detail-item">
+                    <span class="detail-label">Ciudad:</span>
+                    <span class="detail-value">Buenos Aires, Argentina</span>
+                  </li>
+                  <li class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value">juan.gonzalez.working@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de Intereses -->
+        <div class="interests-section">
+          <h3 class="interests-title">Áreas de Interés</h3>
+          <div class="interests-grid">
+            <div class="interest-item">
+              <div class="interest-icon">🌐</div>
+              <h4 class="interest-name">Desarrollo de Software</h4>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">🤖</div>
+              <h4 class="interest-name">Machine Learning</h4>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">👁️</div>
+              <h4 class="interest-name">Computer Vision</h4>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">💬</div>
+              <h4 class="interest-name">Procesamiento de Lenguaje Natural</h4>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">⚙️</div>
+              <h4 class="interest-name">Ingeniería de Software</h4>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">📊</div>
+              <h4 class="interest-name">Visualización de Datos</h4>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">🔍</div>
+              <h4 class="interest-name">Algoritmos</h4>
+            </div>
+            <div class="interest-item">
+              <div class="interest-icon">🖼️</div>
+              <h4 class="interest-name">Procesamiento de Imágenes</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Educación -->
+    <section id="education" class="section education-section" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="education-title" class="section-title">Educación</h2>
+          <p class="section-description">Mi formación académica y certificaciones profesionales</p>
+        </header>
+
+        <div class="education-timeline">
+          <article class="education-item">
+            <div class="education-icon">
+              <img src="assets/img/education/ieee.png" alt="IEEE Logo" class="institution-logo" loading="lazy">
+            </div>
+            <div class="education-content">
+              <h3 class="education-title">Certificaciones IEEE</h3>
+              <p class="education-subtitle">La comunidad profesional técnica más grande del mundo</p>
+              <time class="education-date">2021</time>
+              <p class="education-description">Certificaciones especializadas en desarrollo de software moderno</p>
+              <ul class="education-achievements">
+                <li><a href="documents/Java8_Maven.pdf" target="_blank" rel="noopener">Git - Maven - IntelliJ</a></li>
+                <li><a href="documents/Api_REST.pdf" target="_blank" rel="noopener">API REST</a></li>
+                <li><a href="documents/ORM_Java.pdf" target="_blank" rel="noopener">Java - ORM - Hibernate</a></li>
+                <li><a href="documents/Spark_Java.pdf" target="_blank" rel="noopener">Arquitectura Web - Spark</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="education-item">
+            <div class="education-icon">
+              <img src="assets/img/education/Java-Logo.png" alt="Java Logo" class="institution-logo" loading="lazy">
+            </div>
+            <div class="education-content">
+              <h3 class="education-title">Desarrollador Java</h3>
+              <p class="education-subtitle">Instituto Argentino de Computación</p>
+              <time class="education-date">2018</time>
+              <p class="education-description">Especialización en desarrollo backend y frontend con Java</p>
+              <ul class="education-achievements">
+                <li>Desarrollo Backend con Java</li>
+                <li>Desarrollo Frontend con Angular</li>
+                <li>Despliegue con Spring</li>
+              </ul>
+              <a href="documents/Java_IAC.pdf" target="_blank" rel="noopener" class="education-link">Ver Certificado</a>
+            </div>
+          </article>
+
+          <article class="education-item">
+            <div class="education-icon">
+              <img src="assets/img/education/utn.png" alt="UTN Logo" class="institution-logo" loading="lazy">
+            </div>
+            <div class="education-content">
+              <h3 class="education-title">Ingeniería en Sistemas de Software</h3>
+              <p class="education-subtitle">Universidad Tecnológica Nacional</p>
+              <time class="education-date">Enero 2018 - Diciembre 2023</time>
+              <p class="education-description">Formación integral en desarrollo de software y gestión de proyectos</p>
+              <ul class="education-achievements">
+                <li>Análisis de Sistemas</li>
+                <li>Gestión de Recursos Humanos</li>
+                <li>Arquitectura de Software</li>
+              </ul>
+              <a href="documents/Plan de estudios.pdf" target="_blank" rel="noopener" class="education-link">Ver Plan de Estudios</a>
+            </div>
+          </article>
+
+          <article class="education-item">
+            <div class="education-icon">
+              <img src="assets/img/education/python.jpg" alt="Python Logo" class="institution-logo" loading="lazy">
+            </div>
+            <div class="education-content">
+              <h3 class="education-title">Desarrollador Python</h3>
+              <p class="education-subtitle">IEEE</p>
+              <time class="education-date">2020</time>
+              <p class="education-description">Especialización en Python para ciencia de datos y machine learning</p>
+              <ul class="education-achievements">
+                <li>Algoritmos en Python</li>
+                <li>Big Data</li>
+                <li>Machine Learning</li>
+              </ul>
+              <a href="documents/Juan Gonzalez_python.pdf" target="_blank" rel="noopener" class="education-link">Ver Certificado</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="experience-title" class="section-title">Experiencia Profesional</h2>
+          <p class="section-description">Mi trayectoria profesional en desarrollo de software</p>
+        </header>
+
+        <div class="experience-timeline">
+          <article class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <h3 class="experience-title">
+                <a href="https://www.riskiq.com/" target="_blank" rel="noopener" class="company-link">RiskIQ</a>
+              </h3>
+              <p class="experience-role">Sr. FullStack Developer (Java - React)</p>
+              <time class="experience-period">Enero 2021 - Presente</time>
+              <p class="experience-description">
+                Desarrollo de soluciones enterprise para ciberseguridad utilizando tecnologías modernas
+              </p>
+              <ul class="experience-achievements">
+                <li>Java 8 SpringBoot – React Frontend – Hibernate ActiveMQ Rabbit Redis</li>
+                <li>Metodología Ágil Scrum con Jira y GitHub PR</li>
+              </ul>
+              <div class="experience-technologies">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">SpringBoot</span>
+                <span class="tech-tag">Redis</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <h3 class="experience-title">
+                <a href="https://www.tgv.com.ar/" target="_blank" rel="noopener" class="company-link">TGV Excelencia en Soluciones Informáticas</a>
+              </h3>
+              <p class="experience-role">Ssr. Backend Java Developer</p>
+              <time class="experience-period">Marzo 2018 - Diciembre 2020</time>
+              <p class="experience-description">
+                Desarrollo backend y frontend para sistemas empresariales complejos
+              </p>
+              <ul class="experience-achievements">
+                <li>Desarrollo Java con PrimeFaces Hibernate Spring JDBC SqlDeveloper SpringBoot</li>
+                <li>Angular 2+ utilizando patrón MVC</li>
+                <li>Desarrollo de APIs REST y SOAP con TypeScript</li>
+              </ul>
+              <div class="experience-technologies">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">Spring</span>
+                <span class="tech-tag">Hibernate</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <h3 class="experience-title">
+                <a href="https://www.foxtv.es/" target="_blank" rel="noopener" class="company-link">Fox Channel</a>
+              </h3>
+              <p class="experience-role">Java Developer</p>
+              <time class="experience-period">Enero 2017 - Mayo 2017</time>
+              <p class="experience-description">
+                Desarrollo y mantenimiento de la aplicación FoxPlay
+              </p>
+              <ul class="experience-achievements">
+                <li>Desarrollo Java y soporte de mantenimiento para FoxPlay App</li>
+                <li>Implementación de Limit TimeSet Job</li>
+                <li>Coordinación de equipo de 3 personas</li>
+              </ul>
+              <div class="experience-technologies">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Streaming</span>
+                <span class="tech-tag">Mobile</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <h3 class="experience-title">
+                <a href="https://www.accenture.com/ar-es" target="_blank" rel="noopener" class="company-link">Accenture</a>
+              </h3>
+              <p class="experience-role">Analyst Programmer Lvl 13</p>
+              <time class="experience-period">Diciembre 2015 - Octubre 2016</time>
+              <p class="experience-description">
+                Desarrollo de soluciones Big Data para equipos internacionales
+              </p>
+              <ul class="experience-achievements">
+                <li>Desarrollo Java con bases Hadoop para equipos extranjeros</li>
+                <li>Coordinación de 2 personas a cargo</li>
+              </ul>
+              <div class="experience-technologies">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Hadoop</span>
+                <span class="tech-tag">Big Data</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <h3 class="experience-title">
+                <a href="https://www.mapfre.com.ar/" target="_blank" rel="noopener" class="company-link">Mapfre Seguros de Vida</a>
+              </h3>
+              <p class="experience-role">Desarrollador de Software Java</p>
+              <time class="experience-period">Noviembre 2013 - Noviembre 2014</time>
+              <p class="experience-description">
+                Desarrollo de webservices y gestión de infraestructura
+              </p>
+              <ul class="experience-achievements">
+                <li>Desarrollo de webServices en Java con Spring Hibernate Axis2 Struts XML</li>
+                <li>Gestión de servidores de test y producción con Linux</li>
+                <li>Desarrollo de packages Oracle en PL/SQL</li>
+              </ul>
+              <div class="experience-technologies">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring</span>
+                <span class="tech-tag">Oracle</span>
+                <span class="tech-tag">Linux</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <h3 class="experience-title">
+                <a href="https://centinelapc.com.ar/" target="_blank" rel="noopener" class="company-link">CentinelaPC</a>
+              </h3>
+              <p class="experience-role">Desarrollador VB6 y Java</p>
+              <time class="experience-period">Febrero 2013 - Noviembre 2013</time>
+              <p class="experience-description">
+                Desarrollo y mantenimiento de aplicaciones cliente
+              </p>
+              <ul class="experience-achievements">
+                <li>Desarrollo y mantenimiento de aplicaciones cliente en Java y VB6</li>
+                <li>Gestión de bases de datos MySQL y Microsoft Access</li>
+              </ul>
+              <div class="experience-technologies">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">VB6</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Access</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="portfolio" class="section portfolio-section" aria-labelledby="portfolio-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="portfolio-title" class="section-title">Mis Proyectos</h2>
+          <p class="section-description">Una selección de mis trabajos más destacados</p>
+        </header>
+
+        <!-- Filtros de proyectos -->
+        <div class="portfolio-filters" role="tablist" aria-label="Filtros de proyectos">
+          <button type="button" class="filter-btn active" data-filter="*" role="tab" aria-selected="true">Todos</button>
+          <button type="button" class="filter-btn" data-filter=".web-app" role="tab" aria-selected="false">Web Apps</button>
+          <button type="button" class="filter-btn" data-filter=".ml-project" role="tab" aria-selected="false">Machine Learning</button>
+          <button type="button" class="filter-btn" data-filter=".blockchain" role="tab" aria-selected="false">Blockchain</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item blockchain" data-category="blockchain">
+            <div class="portfolio-image">
+              <img src="assets/img/project/Blocktar.png" alt="Sistema de Votación Blockchain" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-title">Sistema de Votación Blockchain</h3>
+                <p class="portfolio-description">Plataforma descentralizada para votaciones seguras</p>
+                <div class="portfolio-actions">
+                  <a href="projects/blocktar.html" class="portfolio-link" aria-label="Ver detalles del proyecto Blocktar">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-tech">
+              <span class="tech-tag">Blockchain</span>
+              <span class="tech-tag">Solidity</span>
+              <span class="tech-tag">Web3</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item ml-project" data-category="ml">
+            <div class="portfolio-image">
+              <img src="documents/TASD/fraud_ML.jpg" alt="Detección de Fraude con ML" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-title">Detección de Fraude ML IA</h3>
+                <p class="portfolio-description">Sistema de inteligencia artificial para detectar transacciones fraudulentas</p>
+                <div class="portfolio-actions">
+                  <a href="projects/machineLearning.html" class="portfolio-link" aria-label="Ver detalles del proyecto de Machine Learning">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">TensorFlow</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item web-app" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/img/project/musicplayer.jpg" alt="Reproductor de Música Streaming" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-title">Reproductor de Música Streaming</h3>
+                <p class="portfolio-description">Plataforma web para streaming de música con interfaz moderna</p>
+                <div class="portfolio-actions">
+                  <a href="projects/musicplayer.html" class="portfolio-link" aria-label="Ver detalles del proyecto Music Player">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item web-app" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/img/project/recommender.jpg" alt="Sistema Recomendador de Películas" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-title">Recomendador de Películas</h3>
+                <p class="portfolio-description">Sistema de recomendación basado en machine learning</p>
+                <div class="portfolio-actions">
+                  <a href="projects/recommender.html" class="portfolio-link" aria-label="Ver detalles del proyecto Recommender">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Pandas</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item ml-project" data-category="ml">
+            <div class="portfolio-image">
+              <img src="assets/img/project/resume.jpg" alt="Clasificador de Secciones de CV" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-title">Clasificador de Secciones de CV</h3>
+                <p class="portfolio-description">IA para analizar y clasificar automáticamente secciones de currículums</p>
+                <div class="portfolio-actions">
+                  <a href="projects/resume.html" class="portfolio-link" aria-label="Ver detalles del proyecto Resume Classifier">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-tech">
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">spaCy</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item ml-project" data-category="ml">
+            <div class="portfolio-image">
+              <img src="assets/img/project/vdg.jpg" alt="Generador de Descripciones de Video" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-title">Generador de Descripciones de Video</h3>
+                <p class="portfolio-description">IA que genera descripciones automáticas de contenido de video</p>
+                <div class="portfolio-actions">
+                  <a href="projects/vdg.html" class="portfolio-link" aria-label="Ver detalles del proyecto Video Description Generator">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-tech">
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">OpenCV</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item web-app" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/img/project/ml.jpg" alt="Plataforma ML-DL Web" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-title">Plataforma ML-DL Web</h3>
+                <p class="portfolio-description">Aplicación web para experimentación con modelos de ML y Deep Learning</p>
+                <div class="portfolio-actions">
+                  <a href="projects/ml.html" class="portfolio-link" aria-label="Ver detalles del proyecto ML-DL Web App">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-tech">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </article>
+
+          <article class="portfolio-item ml-project" data-category="ml">
+            <div class="portfolio-image">
+              <img src="assets/img/project/gan.jpg" alt="Generador de Imágenes GAN" loading="lazy">
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-title">Generador de Imágenes GAN</h3>
+                <p class="portfolio-description">Red adversarial generativa para creación de imágenes sintéticas</p>
+                <div class="portfolio-actions">
+                  <a href="projects/gan.html" class="portfolio-link" aria-label="Ver detalles del proyecto GAN Image Generator">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-tech">
+              <span class="tech-tag">GAN</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">CUDA</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="skills-title" class="section-title">Habilidades Técnicas</h2>
+          <p class="section-description">Tecnologías y herramientas que domino</p>
+        </header>
+
+        <div class="skills-content">
+          <div class="skill-category">
+            <h3 class="skill-category-title">Lenguajes y Bases de Datos</h3>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" loading="lazy">
+                </div>
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" loading="lazy">
+                </div>
+                <span class="skill-name">Java</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5" loading="lazy">
+                </div>
+                <span class="skill-name">HTML5</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" loading="lazy" class="skill-image-css">
+                </div>
+                <span class="skill-name">CSS3</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL" loading="lazy">
+                </div>
+                <span class="skill-name">MySQL</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="PostgreSQL" loading="lazy">
+                </div>
+                <span class="skill-name">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title">Frameworks y Librerías</h3>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" alt="Flask" loading="lazy">
+                </div>
+                <span class="skill-name">Flask</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django" loading="lazy">
+                </div>
+                <span class="skill-name">Django</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="Node.js" loading="lazy">
+                </div>
+                <span class="skill-name">Node.js</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" loading="lazy">
+                </div>
+                <span class="skill-name">Bootstrap</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow" loading="lazy">
+                </div>
+                <span class="skill-name">TensorFlow</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="PyTorch" loading="lazy">
+                </div>
+                <span class="skill-name">PyTorch</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="OpenCV" loading="lazy">
+                </div>
+                <span class="skill-name">OpenCV</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" loading="lazy" class="skill-image-sklearn">
+                </div>
+                <span class="skill-name">Scikit-learn</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title">Herramientas y Tecnologías</h3>
+            <div class="skill-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git" loading="lazy">
+                </div>
+                <span class="skill-name">Git</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="AWS" loading="lazy">
+                </div>
+                <span class="skill-name">AWS</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="Google Cloud" loading="lazy">
+                </div>
+                <span class="skill-name">Google Cloud</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="Heroku" loading="lazy">
+                </div>
+                <span class="skill-name">Heroku</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter" loading="lazy">
+                </div>
+                <span class="skill-name">Jupyter</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="skill-icon-docker">
+                    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186H8.1a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186H5.136a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185M8.1 5.718h2.12a.186.186 0 00.184-.186V3.574a.185.185 0 00-.184-.185H8.1a.185.185 0 00-.185.185v1.958c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.186V3.574a.185.185 0 00-.184-.185H5.136a.186.186 0 00-.186.185v1.958c0 .102.084.185.186.185M24 10.314c0 4.21-8.751 7.621-19.526 7.621S-15.052 14.524-15.052 10.314s8.751-7.621 19.526-7.621S24 6.104 24 10.314"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="contact-title" class="section-title">Contacto</h2>
+          <p class="section-description">¿Interesado en trabajar juntos? ¡Hablemos!</p>
+        </header>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h3 class="contact-title">Mi Ubicación</h3>
+                <p class="contact-text">Buenos Aires</p>
+                <p class="contact-text">Argentina</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h3 class="contact-title">Email</h3>
+                <p class="contact-text">
+                  <a href="mailto:juan.gonzalez.working@gmail.com">juan.gonzalez.working@gmail.com</a>
                 </p>
+                <p class="contact-text">
+                  <a href="mailto:juanpgonzalez@frba.utn.edu.ar">juanpgonzalez@frba.utn.edu.ar</a>
+                </p>
+              </div>
             </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Frameworks</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="upload.wikimedia.org" width="90" height="70">
-              </p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Tools</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="vectorlogo.zone">
-              </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- End Skills Section -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h3 class="contact-title">Teléfono</h3>
+                <p class="contact-text">
+                  <a href="tel:+5491123156009">+54&nbsp;9&nbsp;11&nbsp;2315&nbsp;6009</a>
+                </p>
+              </div>
+            </div>
 
-
-
-
-  <!-- Start Links section -->
-  <section id="links" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Resume & Links</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://drive.google.com/file/d/1iHBNV2UkH5LkhAP-1hYRZ2Ez_BQ6g4S7/view?usp=sharing" target="_blank">Resume</a></h4>
-          <p class="description" style="color:#fff;">The link contains downloadable resume</p>
-        </div>
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
-          <p class="description" style="color:#fff;"> The github repository contains leetcode problems solution in python.</p>
-        </div>
-        <!-- <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://techingenious.herokuapp.com/" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://techingenious.herokuapp.com/" target="_blank">Blog</a></h4>
-          <p class="description" style="color:#fff;">Blog containing articles on AI, coding, development</p>
-        </div> -->
-      </div>
-    </div>
-  </section> <!--End Links Section -->
-
-
-  <!-- Start Contact Section -->
-
-  <section id="contacts" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Argentina</p>
-            <p>Buenos Aires</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.github.com/" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:juan.gonzalez.working@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08C6.03 6.34 7.57 5.06 9.4 4.44 8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56-1.83-.63-3.37-1.9-4.32-3.56m-.16-2C4.8 13.36 4.7 12.69 4.7 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h3 class="contact-title">Redes Sociales</h3>
+                <div class="social-links-contact">
+                  <a href="https://www.linkedin.com/in/jp-gonzalez" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                  </a>
+                  <a href="https://github.com/jp-developer0" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <p>juan.gonzalez.working@gmail.com</p>
-            <p>juanpgonzalez@frba.utn.edu.ar</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Contact</h3>
-            <p>+54 9 11 2315 6009</p>
-          </div>
+          <!-- Formulario de contacto -->
+          <form class="contact-form" netlify name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+
+            <div class="form-group">
+              <label for="name" class="form-label">Nombre completo</label>
+              <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error">
+              <span id="name-error" class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error">
+              <span id="email-error" class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Asunto</label>
+              <input type="text" id="subject" name="subject" class="form-input" required aria-describedby="subject-error">
+              <span id="subject-error" class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" required aria-describedby="message-error"></textarea>
+              <span id="message-error" class="form-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="form-submit">
+              <span class="button-text">Enviar Mensaje</span>
+              <svg class="button-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
-      <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
-    </div>
-  </section>
+    </section>
 
-  <!-- End Contact Section -->
+  </main>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Coder", "Developer", "Enginner"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
+  <!-- Scripts -->
+  <script src="./main.js" defer></script>
+
+  <!-- Service Worker para PWA (opcional) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(registration => console.log('SW registered'))
+          .catch(registrationError => console.log('SW registration failed'));
+      });
+    }
   </script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>

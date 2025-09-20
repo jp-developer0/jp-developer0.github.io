@@ -1,0 +1,545 @@
+/* Estilos para la sección de Contacto */
+
+.contact-section {
+  background: var(--color-bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(18, 214, 64, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 193, 7, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(1, 14, 27, 0.8) 0%, rgba(9, 32, 58, 0.8) 100%);
+  z-index: 1;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Contenido de Contacto */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+/* Información de Contacto */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(18, 214, 64, 0.05),
+    transparent
+  );
+  transition: left var(--transition-slow);
+}
+
+.contact-item:hover::before {
+  left: 100%;
+}
+
+.contact-item:hover {
+  transform: translateX(8px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Iconos de Contacto */
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(18, 214, 64, 0.3);
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-text-primary);
+}
+
+/* Detalles de Contacto */
+.contact-details {
+  flex: 1;
+}
+
+.contact-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.contact-text {
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-1);
+}
+
+.contact-text a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-text a:hover {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+/* Enlaces Sociales en Contacto */
+.social-links-contact {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.social-links-contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.social-links-contact a:hover {
+  background: var(--color-primary);
+  color: var(--color-text-primary);
+  transform: translateY(-2px);
+}
+
+.social-links-contact svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Formulario de Contacto */
+.contact-form {
+  background: var(--color-bg-card);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+}
+
+/* Grupos de Formulario */
+.form-group {
+  margin-bottom: var(--space-6);
+  position: relative;
+}
+
+.form-group:last-of-type {
+  margin-bottom: var(--space-8);
+}
+
+/* Etiquetas del Formulario */
+.form-label {
+  display: block;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2);
+  transition: color var(--transition-fast);
+}
+
+/* Inputs del Formulario */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  font-family: inherit;
+  transition: all var(--transition-fast);
+  resize: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(18, 214, 64, 0.1);
+}
+
+.form-input:focus + .form-label,
+.form-textarea:focus + .form-label {
+  color: var(--color-primary);
+}
+
+/* Textarea específico */
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Errores del Formulario */
+.form-error {
+  display: block;
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all var(--transition-fast);
+}
+
+.form-error.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form-group.error .form-input,
+.form-group.error .form-textarea {
+  border-color: var(--color-error);
+  background: rgba(220, 53, 69, 0.05);
+}
+
+.form-group.error .form-label {
+  color: var(--color-error);
+}
+
+/* Estados de validación */
+.form-group.valid .form-input,
+.form-group.valid .form-textarea {
+  border-color: var(--color-success);
+  background: rgba(40, 167, 69, 0.05);
+}
+
+.form-group.valid::after {
+  content: '✓';
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-success);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Botón de Envío */
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-8);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  color: var(--color-text-primary);
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  min-width: 180px;
+  justify-content: center;
+}
+
+.form-submit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left var(--transition-normal);
+}
+
+.form-submit:hover::before {
+  left: 100%;
+}
+
+.form-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(18, 214, 64, 0.4);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-light),
+    var(--color-accent)
+  );
+}
+
+.form-submit:active {
+  transform: translateY(-1px);
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.button-text {
+  transition: transform var(--transition-fast);
+}
+
+.button-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-fast);
+}
+
+.form-submit:hover .button-text {
+  transform: translateX(-2px);
+}
+
+.form-submit:hover .button-icon {
+  transform: translateX(4px);
+}
+
+/* Estados de carga */
+.form-submit.loading .button-text {
+  opacity: 0;
+}
+
+.form-submit.loading .button-icon {
+  animation: spin 1s linear infinite;
+}
+
+/* Mensajes de estado */
+.form-message {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-4);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all var(--transition-fast);
+}
+
+.form-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form-message.success {
+  background: rgba(40, 167, 69, 0.1);
+  border: 1px solid var(--color-success);
+  color: var(--color-success);
+}
+
+.form-message.error {
+  background: rgba(220, 53, 69, 0.1);
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  .contact-info {
+    order: 2;
+  }
+
+  .contact-form {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    gap: var(--space-8);
+  }
+
+  .contact-item {
+    padding: var(--space-4);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-icon {
+    margin-bottom: var(--space-2);
+  }
+
+  .contact-form {
+    padding: var(--space-6);
+  }
+
+  .social-links-contact {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: var(--space-4);
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: var(--space-3);
+    font-size: var(--font-size-sm);
+  }
+
+  .form-submit {
+    width: 100%;
+    padding: var(--space-4);
+  }
+
+  .contact-item {
+    gap: var(--space-3);
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Animaciones de entrada */
+.contact-item {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all var(--transition-slow);
+}
+
+.contact-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact-item:nth-child(1) { transition-delay: 0.1s; }
+.contact-item:nth-child(2) { transition-delay: 0.2s; }
+.contact-item:nth-child(3) { transition-delay: 0.3s; }
+.contact-item:nth-child(4) { transition-delay: 0.4s; }
+
+.contact-form {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all var(--transition-slow) 0.3s;
+}
+
+.contact-form.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efectos especiales */
+.contact-section.submitted .contact-form {
+  background: rgba(40, 167, 69, 0.1);
+  border-color: var(--color-success);
+}
+
+.contact-section.submitted .contact-form::before {
+  background: linear-gradient(
+    90deg,
+    var(--color-success),
+    var(--color-success)
+  );
+}
+
+/* Micro-interacciones */
+.form-input:focus,
+.form-textarea:focus {
+  animation: focusPulse 0.3s ease-out;
+}
+
+@keyframes focusPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(18, 214, 64, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(18, 214, 64, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(18, 214, 64, 0);
+  }
+}
