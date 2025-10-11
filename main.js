@@ -507,13 +507,13 @@
       this.materialCards.forEach(card => {
         const cardPage = parseInt(card.getAttribute('data-page'));
         if (cardPage === pageNumber) {
-          card.style.display = '';
+          addClass(card, 'page-visible');
           // Trigger animation
           setTimeout(() => {
             addClass(card, 'animate-fade-in');
           }, 50);
         } else {
-          card.style.display = 'none';
+          removeClass(card, 'page-visible');
           removeClass(card, 'animate-fade-in');
         }
       });
