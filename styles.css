@@ -1307,8 +1307,8 @@ svg {
 }
 
 .institution-logo {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   object-fit: contain;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
@@ -1427,8 +1427,8 @@ svg {
   }
 
   .institution-logo {
-    width: 90px;
-    height: 90px;
+    width: 180px;
+    height: 180px;
   }
 
   .education-title {
@@ -1442,8 +1442,8 @@ svg {
   }
 
   .institution-logo {
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
   }
 
   .education-title {
