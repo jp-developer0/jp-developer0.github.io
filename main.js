@@ -427,6 +427,181 @@
     window.portfolioApp = new PortfolioApp();
   }
 
+  // ===== PAGINACIÓN DE MATERIAL EDUCATIVO =====
+  class MaterialPagination {
+    constructor() {
+      this.currentPage = 1;
+      this.itemsPerPage = 6;
+      this.totalPages = 0;
+      this.materialCards = $$('.material-card[data-page]');
+      this.paginationNumbers = $('#paginationNumbers');
+      this.prevBtn = $('.pagination-prev');
+      this.nextBtn = $('.pagination-next');
+      this.currentPageInfo = $('#currentPageInfo');
+      this.totalPagesInfo = $('#totalPagesInfo');
+
+      if (this.materialCards.length > 0) {
+        this.init();
+      }
+    }
+
+    init() {
+      this.calculateTotalPages();
+      this.renderPaginationNumbers();
+      this.bindEvents();
+      this.showPage(1);
+      console.log('📄 Paginación inicializada:', this.totalPages, 'páginas');
+    }
+
+    calculateTotalPages() {
+      // Obtener el número de página más alto
+      let maxPage = 0;
+      this.materialCards.forEach(card => {
+        const page = parseInt(card.getAttribute('data-page'));
+        if (page > maxPage) maxPage = page;
+      });
+      this.totalPages = maxPage;
+
+      if (this.totalPagesInfo) {
+        this.totalPagesInfo.textContent = this.totalPages;
+      }
+    }
+
+    bindEvents() {
+      if (this.prevBtn) {
+        on(this.prevBtn, 'click', () => this.goToPrevPage());
+      }
+
+      if (this.nextBtn) {
+        on(this.nextBtn, 'click', () => this.goToNextPage());
+      }
+    }
+
+    renderPaginationNumbers() {
+      if (!this.paginationNumbers) return;
+
+      this.paginationNumbers.innerHTML = '';
+
+      for (let i = 1; i <= this.totalPages; i++) {
+        const button = document.createElement('button');
+        button.className = 'pagination-number';
+        button.textContent = i;
+        button.setAttribute('aria-label', `Ir a página ${i}`);
+
+        if (i === this.currentPage) {
+          button.classList.add('active');
+          button.setAttribute('aria-current', 'page');
+        }
+
+        on(button, 'click', () => this.goToPage(i));
+        this.paginationNumbers.appendChild(button);
+      }
+    }
+
+    showPage(pageNumber) {
+      if (pageNumber < 1 || pageNumber > this.totalPages) return;
+
+      this.currentPage = pageNumber;
+
+      // Ocultar todas las tarjetas y mostrar solo las de la página actual
+      this.materialCards.forEach(card => {
+        const cardPage = parseInt(card.getAttribute('data-page'));
+        if (cardPage === pageNumber) {
+          card.style.display = '';
+          // Trigger animation
+          setTimeout(() => {
+            addClass(card, 'animate-fade-in');
+          }, 50);
+        } else {
+          card.style.display = 'none';
+          removeClass(card, 'animate-fade-in');
+        }
+      });
+
+      // Actualizar botones
+      this.updateButtons();
+
+      // Actualizar números de paginación
+      this.updatePaginationNumbers();
+
+      // Actualizar info de página
+      if (this.currentPageInfo) {
+        this.currentPageInfo.textContent = pageNumber;
+      }
+
+      // Scroll suave a la sección de material
+      const materialSection = $('#material');
+      if (materialSection) {
+        setTimeout(() => {
+          scrollToElement(materialSection, 100);
+        }, 100);
+      }
+    }
+
+    updateButtons() {
+      if (this.prevBtn) {
+        if (this.currentPage === 1) {
+          this.prevBtn.disabled = true;
+          this.prevBtn.setAttribute('aria-disabled', 'true');
+        } else {
+          this.prevBtn.disabled = false;
+          this.prevBtn.setAttribute('aria-disabled', 'false');
+        }
+      }
+
+      if (this.nextBtn) {
+        if (this.currentPage === this.totalPages) {
+          this.nextBtn.disabled = true;
+          this.nextBtn.setAttribute('aria-disabled', 'true');
+        } else {
+          this.nextBtn.disabled = false;
+          this.nextBtn.setAttribute('aria-disabled', 'false');
+        }
+      }
+    }
+
+    updatePaginationNumbers() {
+      const numbers = $$('.pagination-number');
+      numbers.forEach((button, index) => {
+        const page = index + 1;
+        if (page === this.currentPage) {
+          addClass(button, 'active');
+          button.setAttribute('aria-current', 'page');
+        } else {
+          removeClass(button, 'active');
+          button.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    goToPage(pageNumber) {
+      if (pageNumber !== this.currentPage) {
+        this.showPage(pageNumber);
+      }
+    }
+
+    goToPrevPage() {
+      if (this.currentPage > 1) {
+        this.showPage(this.currentPage - 1);
+      }
+    }
+
+    goToNextPage() {
+      if (this.currentPage < this.totalPages) {
+        this.showPage(this.currentPage + 1);
+      }
+    }
+  }
+
+  // Inicializar paginación cuando el DOM esté listo
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      window.materialPagination = new MaterialPagination();
+    });
+  } else {
+    window.materialPagination = new MaterialPagination();
+  }
+
   // Setup Service Worker
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
