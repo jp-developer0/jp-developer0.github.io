@@ -1307,8 +1307,8 @@ svg {
 }
 
 .institution-logo {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
