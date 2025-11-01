@@ -528,14 +528,6 @@
       if (this.currentPageInfo) {
         this.currentPageInfo.textContent = pageNumber;
       }
-
-      // Scroll suave a la sección de material
-      const materialSection = $('#material');
-      if (materialSection) {
-        setTimeout(() => {
-          scrollToElement(materialSection, 100);
-        }, 100);
-      }
     }
 
     updateButtons() {
