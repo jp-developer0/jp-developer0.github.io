@@ -87,10 +87,10 @@
       this.scrollThreshold = 100;
       
       this.typingTexts = [
-        'Desarrollador Full-Stack',
-        'Ingeniero de Software',
-        'Especialista en Machine Learning',
-        'Arquitecto de Soluciones',
+        'Full-Stack Developer',
+        'Software Engineer',
+        'Machine Learning Specialist',
+        'Solutions Architect',
         'Data Scientist'
       ];
       this.currentTextIndex = 0;
