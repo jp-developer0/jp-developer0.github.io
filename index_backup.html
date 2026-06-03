@@ -545,15 +545,500 @@
       <div class="container">
         <header class="section-header">
           <h2 id="material-title" class="section-title">Educational Resources</h2>
-          <p class="section-description">Technical resources and documentation I have developed</p>
+          <p class="section-description">Technical resources and documentation organized by categories</p>
         </header>
 
+        <!-- Category Filters -->
+        <div class="material-filters">
+          <button class="material-filter-btn active" data-category="all">All Resources</button>
+          <button class="material-filter-btn" data-category="ai">AI & Machine Learning</button>
+          <button class="material-filter-btn" data-category="project-management">Project Management</button>
+          <button class="material-filter-btn" data-category="architecture">Software Architecture</button>
+        </div>
+
         <div class="material-grid" id="materialGrid">
-          <article class="material-card" data-page="1">
+          
+          <!-- AI & Machine Learning Category -->
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop"
+                 alt="Introduction to Artificial Intelligence"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Introduction to Artificial Intelligence</h3>
+              <p class="material-description">AI fundamentals and intelligent systems:</p>
+              <ul class="material-topics">
+                <li>Intelligent Systems</li>
+                <li>Algorithm Evolution</li>
+                <li>Machine Learning Basics</li>
+                <li>AI Applications</li>
+              </ul>
+              <a href="documents/ia/IA-SI_2C2021.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View Artificial Intelligence material">
+                Open Resource
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=400&h=300&fit=crop"
+                 alt="Word Embeddings"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Word Embeddings</h3>
+              <p class="material-description">Natural Language Processing fundamentals:</p>
+              <ul class="material-topics">
+                <li>Vector Representations</li>
+                <li>Word2Vec & GloVe</li>
+                <li>Semantic Relationships</li>
+                <li>NLP Applications</li>
+              </ul>
+              <a href="documents/ia/2_Word_embeddings.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View Word Embeddings document">
+                View Document
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=300&fit=crop"
+                 alt="Transformers Architecture"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Transformers Architecture</h3>
+              <p class="material-description">Advanced neural network architectures:</p>
+              <ul class="material-topics">
+                <li>Attention Mechanisms</li>
+                <li>BERT & GPT Models</li>
+                <li>Self-Attention</li>
+                <li>Language Models</li>
+              </ul>
+              <a href="documents/ia/7 - Transformers.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View Transformers documentation">
+                View Documentation
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop"
+                 alt="Reinforcement Learning"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Reinforcement Learning</h3>
+              <p class="material-description">Learning through interaction and rewards:</p>
+              <ul class="material-topics">
+                <li>Q-Learning</li>
+                <li>Policy Gradients</li>
+                <li>Agent-Environment Interaction</li>
+                <li>Game AI</li>
+              </ul>
+              <a href="documents/ia/aprefuerzo.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View Reinforcement Learning guide">
+                View Guide
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
+                 alt="Model Learning"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Model Learning & Training</h3>
+              <p class="material-description">Advanced machine learning techniques:</p>
+              <ul class="material-topics">
+                <li>Model Selection</li>
+                <li>Training Strategies</li>
+                <li>Hyperparameter Tuning</li>
+                <li>Performance Evaluation</li>
+              </ul>
+              <a href="documents/ia/aprendizajeDeModelos.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View Model Learning documentation">
+                View Documentation
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop"
+                 alt="CNN and Attention"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">CNN & Attention Mechanisms</h3>
+              <p class="material-description">Convolutional networks and attention:</p>
+              <ul class="material-topics">
+                <li>Convolutional Neural Networks</li>
+                <li>Attention Layers</li>
+                <li>Computer Vision</li>
+                <li>Feature Extraction</li>
+              </ul>
+              <a href="documents/ia/Clase 5 - CNN y Atención (nv).pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View CNN and Attention class">
+                View Class
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop"
+                 alt="Model Deployment"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Model Deployment</h3>
+              <p class="material-description">Production deployment strategies:</p>
+              <ul class="material-topics">
+                <li>Model Serving</li>
+                <li>API Development</li>
+                <li>Containerization</li>
+                <li>Scalability</li>
+              </ul>
+              <a href="documents/ia/desplegandoModelos.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View Model Deployment guide">
+                View Guide
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                 alt="Advanced Model Deployment"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Advanced Model Deployment</h3>
+              <p class="material-description">Advanced deployment patterns:</p>
+              <ul class="material-topics">
+                <li>Microservices Architecture</li>
+                <li>Load Balancing</li>
+                <li>Monitoring & Logging</li>
+                <li>A/B Testing</li>
+              </ul>
+              <a href="documents/ia/desplegandoModelos2_ms.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View Advanced Deployment guide">
+                View Guide
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop"
+                 alt="Model Deployment Microservices"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Deployment Microservices</h3>
+              <p class="material-description">Microservices for ML deployment:</p>
+              <ul class="material-topics">
+                <li>Service Orchestration</li>
+                <li>Container Management</li>
+                <li>API Gateway</li>
+                <li>Distributed Systems</li>
+              </ul>
+              <a href="documents/ia/desplegandoModelos2_ms3.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View Microservices Deployment guide">
+                View Guide
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="ai">
+            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=300&fit=crop"
+                 alt="MLOps Basics"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">MLOps Fundamentals</h3>
+              <p class="material-description">Machine Learning Operations:</p>
+              <ul class="material-topics">
+                <li>ML Pipeline Automation</li>
+                <li>Model Versioning</li>
+                <li>Continuous Integration</li>
+                <li>Production Monitoring</li>
+              </ul>
+              <a href="documents/ia/MLops_basico.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View MLOps documentation">
+                View Documentation
+              </a>
+            </div>
+          </article>
+
+          <!-- Project Management Category -->
+          <article class="material-card" data-category="project-management">
             <img src="documents/gerencia/logo.jpg"
                  alt="Document on General Management"
                  class="material-image"
                  loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">General Management</h3>
+              <p class="material-description">Fundamental management concepts:</p>
+              <ul class="material-topics">
+                <li>Types of Managers</li>
+                <li>Organizational Structures</li>
+                <li>Mintzberg and Sallenave Ideas</li>
+                <li>Negotiation Techniques</li>
+              </ul>
+              <a href="documents/gerencia/Gerente_General.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View General Management document">
+                View Document
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop"
+                 alt="Uncertainty in Software Projects"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Uncertainty in Software Projects</h3>
+              <p class="material-description">Risk management and estimations:</p>
+              <ul class="material-topics">
+                <li>Risk Assessment</li>
+                <li>Estimation Techniques</li>
+                <li>Project Planning</li>
+                <li>Uncertainty Handling</li>
+              </ul>
+              <a href="documents/insertidumbre/04-EstimacionesDeSoftware.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View document on software uncertainty">
+                View Content
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop"
+                 alt="Neuro-Linguistic Programming"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Neuro-Linguistic Programming</h3>
+              <p class="material-description">Communication and influence techniques:</p>
+              <ul class="material-topics">
+                <li>Rapport Building</li>
+                <li>Anchoring Techniques</li>
+                <li>Reframing</li>
+                <li>Modeling Excellence</li>
+              </ul>
+              <a href="documents/pnl/ProgramacionNeuroLinguistica.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View NLP documentation">
+                View Documentation
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop"
+                 alt="Effective Oral Communication"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Effective Oral Communication</h3>
+              <p class="material-description">Professional communication skills:</p>
+              <ul class="material-topics">
+                <li>Public Speaking</li>
+                <li>Presentation Skills</li>
+                <li>Active Listening</li>
+                <li>Persuasion Techniques</li>
+              </ul>
+              <a href="documents/comunicacion oral/ComunicacionOralEficaz.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View oral communication documentation">
+                View Documentation
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop"
+                 alt="Complete Resource Management"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Resource Management</h3>
+              <p class="material-description">Complete resource management manual:</p>
+              <ul class="material-topics">
+                <li>Human Resource Management</li>
+                <li>Resource Planning</li>
+                <li>Process Optimization</li>
+                <li>Control and Monitoring</li>
+              </ul>
+              <a href="documents/adr/administracion de recursos completo.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View complete resource management manual">
+                View Complete Manual
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop"
+                 alt="CAPEX, OPEX and TCO"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">CAPEX, OPEX and TCO</h3>
+              <p class="material-description">Financial management for projects:</p>
+              <ul class="material-topics">
+                <li>Capital Expenditure</li>
+                <li>Operating Expenditure</li>
+                <li>Total Cost of Ownership</li>
+                <li>Financial Planning</li>
+              </ul>
+              <a href="documents/adr/CAPEX OPEX TCO.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View document on CAPEX, OPEX and TCO">
+                View Document
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=400&h=300&fit=crop"
+                 alt="Agile Manifesto"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Agile Manifesto</h3>
+              <p class="material-description">Agile software development principles:</p>
+              <ul class="material-topics">
+                <li>Agile Values</li>
+                <li>Scrum Framework</li>
+                <li>Iterative Development</li>
+                <li>Team Collaboration</li>
+              </ul>
+              <a href="documents/adr/Manifiesto Agil.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View agile manifesto principles">
+                View Principles
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+                 alt="Business Leadership"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Business Leadership</h3>
+              <p class="material-description">Effective leadership fundamentals:</p>
+              <ul class="material-topics">
+                <li>Leadership Styles</li>
+                <li>Effective Communication</li>
+                <li>Team Management</li>
+                <li>Decision Making</li>
+              </ul>
+              <a href="documents/gerencia/06 Liderazgo.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View material on leadership">
+                View Resource
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop"
+                 alt="Motivational Manager"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">Motivational Manager</h3>
+              <p class="material-description">Motivation and management techniques:</p>
+              <ul class="material-topics">
+                <li>Motivation Theories</li>
+                <li>Recognition and Rewards</li>
+                <li>Organizational Climate</li>
+                <li>Talent Development</li>
+              </ul>
+              <a href="documents/gerencia/08 Gerente Motivador.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View material on motivational management">
+                View Resource
+              </a>
+            </div>
+          </article>
+
+          <article class="material-card" data-category="project-management">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop"
+                 alt="GPSI - Introduction and Structuring"
+                 class="material-image"
+                 loading="lazy">
+            <div class="material-content">
+              <h3 class="material-title">GPSI - Introduction</h3>
+              <p class="material-description">Information Systems Project Management:</p>
+              <ul class="material-topics">
+                <li>Management Methodologies</li>
+                <li>Structuring Phase</li>
+                <li>Project Planning</li>
+                <li>Risk Management</li>
+              </ul>
+              <a href="documents/gerencia/1-GPSI-Introducción y Fase de Estructuración - UTN - 2021.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="material-link"
+                 aria-label="View GPSI introduction material">
+                View Resource
+              </a>
+            </div>
+          </article>
             <h3 class="material-title">General Management</h3>
             <p class="material-description">Fundamental management concepts:</p>
             <ul class="material-topics">
@@ -705,28 +1190,6 @@
           </article>
 
           <article class="material-card" data-page="2">
-            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=400&h=300&fit=crop"
-                 alt="Word Embeddings"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">Word Embeddings</h3>
-            <p class="material-description">Natural Language Processing fundamentals:</p>
-            <ul class="material-topics">
-              <li>Vector Representations</li>
-              <li>Word2Vec & GloVe</li>
-              <li>Semantic Relationships</li>
-              <li>NLP Applications</li>
-            </ul>
-            <a href="documents/ia/2_Word_embeddings.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View Word Embeddings document">
-              View Document
-            </a>
-          </article>
-
-          <article class="material-card" data-page="2">
             <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop"
                  alt="System Concurrency"
                  class="material-image"
@@ -745,28 +1208,6 @@
                class="material-link"
                aria-label="View material on concurrency">
               View Resource
-            </a>
-          </article>
-
-          <article class="material-card" data-page="2">
-            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=300&fit=crop"
-                 alt="Transformers Architecture"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">Transformers Architecture</h3>
-            <p class="material-description">Advanced neural network architectures:</p>
-            <ul class="material-topics">
-              <li>Attention Mechanisms</li>
-              <li>BERT & GPT Models</li>
-              <li>Self-Attention</li>
-              <li>Language Models</li>
-            </ul>
-            <a href="documents/ia/7 - Transformers.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View Transformers documentation">
-              View Documentation
             </a>
           </article>
 
@@ -814,7 +1255,7 @@
             </a>
           </article>
 
-          <article class="material-card" data-page="7">
+          <article class="material-card" data-page="2">
             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop"
                  alt="Introduction to Software Architecture"
                  class="material-image"
@@ -836,7 +1277,7 @@
             </a>
           </article>
 
-          <article class="material-card" data-page="7">
+          <article class="material-card" data-page="2">
             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
                  alt="Client-Server and MVC"
                  class="material-image"
@@ -883,28 +1324,6 @@
           </article>
 
           <article class="material-card" data-page="3">
-            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop"
-                 alt="Reinforcement Learning"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">Reinforcement Learning</h3>
-            <p class="material-description">Learning through interaction and rewards:</p>
-            <ul class="material-topics">
-              <li>Q-Learning</li>
-              <li>Policy Gradients</li>
-              <li>Agent-Environment Interaction</li>
-              <li>Game AI</li>
-            </ul>
-            <a href="documents/ia/aprefuerzo.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View Reinforcement Learning guide">
-              View Guide
-            </a>
-          </article>
-
-          <article class="material-card" data-page="3">
             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
                  alt="Software Architecture - Part III"
                  class="material-image"
@@ -926,28 +1345,6 @@
                 View Class
               </a>
             </div>
-          </article>
-
-          <article class="material-card" data-page="3">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
-                 alt="Model Learning"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">Model Learning & Training</h3>
-            <p class="material-description">Advanced machine learning techniques:</p>
-            <ul class="material-topics">
-              <li>Model Selection</li>
-              <li>Training Strategies</li>
-              <li>Hyperparameter Tuning</li>
-              <li>Performance Evaluation</li>
-            </ul>
-            <a href="documents/ia/aprendizajeDeModelos.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View Model Learning documentation">
-              View Documentation
-            </a>
           </article>
 
           <article class="material-card" data-page="3">
@@ -997,7 +1394,7 @@
             </div>
           </article>
 
-          <article class="material-card" data-page="7">
+          <article class="material-card" data-page="3">
             <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=400&h=300&fit=crop"
                  alt="Agile Manifesto Principles"
                  class="material-image"
@@ -1019,7 +1416,7 @@
             </a>
           </article>
 
-          <article class="material-card" data-page="7">
+          <article class="material-card" data-page="3">
             <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop"
                  alt="DDS Summary - First Exam"
                  class="material-image"
@@ -1063,28 +1460,6 @@
                 View Summary
               </a>
             </div>
-          </article>
-
-          <article class="material-card" data-page="4">
-            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop"
-                 alt="CNN and Attention"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">CNN & Attention Mechanisms</h3>
-            <p class="material-description">Convolutional networks and attention:</p>
-            <ul class="material-topics">
-              <li>Convolutional Neural Networks</li>
-              <li>Attention Layers</li>
-              <li>Computer Vision</li>
-              <li>Feature Extraction</li>
-            </ul>
-            <a href="documents/ia/Clase 5 - CNN y Atención (nv).pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View CNN and Attention class">
-              View Class
-            </a>
           </article>
 
           <!-- Management and Leadership -->
@@ -1161,28 +1536,6 @@
           </article>
 
           <article class="material-card" data-page="4">
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop"
-                 alt="Model Deployment"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">Model Deployment</h3>
-            <p class="material-description">Production deployment strategies:</p>
-            <ul class="material-topics">
-              <li>Model Serving</li>
-              <li>API Development</li>
-              <li>Containerization</li>
-              <li>Scalability</li>
-            </ul>
-            <a href="documents/ia/desplegandoModelos.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View Model Deployment guide">
-              View Guide
-            </a>
-          </article>
-
-          <article class="material-card" data-page="8">
             <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=400&h=300&fit=crop"
                  alt="Agile Project Management"
                  class="material-image"
@@ -1206,7 +1559,7 @@
             </div>
           </article>
 
-          <article class="material-card" data-page="8">
+          <article class="material-card" data-page="4">
             <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=300&fit=crop"
                  alt="Steps for Creating Gantt Charts"
                  class="material-image"
@@ -1252,28 +1605,6 @@
                 View Resource
               </a>
             </div>
-          </article>
-
-          <article class="material-card" data-page="5">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
-                 alt="Advanced Model Deployment"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">Advanced Model Deployment</h3>
-            <p class="material-description">Advanced deployment patterns:</p>
-            <ul class="material-topics">
-              <li>Microservices Architecture</li>
-              <li>Load Balancing</li>
-              <li>Monitoring & Logging</li>
-              <li>A/B Testing</li>
-            </ul>
-            <a href="documents/ia/desplegandoModelos2_ms.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View Advanced Deployment guide">
-              View Guide
-            </a>
           </article>
 
           <article class="material-card" data-page="5">
@@ -1349,28 +1680,6 @@
           </article>
 
           <article class="material-card" data-page="5">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop"
-                 alt="Model Deployment Microservices"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">Deployment Microservices</h3>
-            <p class="material-description">Microservices for ML deployment:</p>
-            <ul class="material-topics">
-              <li>Service Orchestration</li>
-              <li>Container Management</li>
-              <li>API Gateway</li>
-              <li>Distributed Systems</li>
-            </ul>
-            <a href="documents/ia/desplegandoModelos2_ms3.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View Microservices Deployment guide">
-              View Guide
-            </a>
-          </article>
-
-          <article class="material-card" data-page="7">
             <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=300&fit=crop"
                  alt="Ethics and Social Responsibility"
                  class="material-image"
@@ -1395,7 +1704,7 @@
           </article>
 
           <!-- Communications -->
-          <article class="material-card" data-page="8">
+          <article class="material-card" data-page="5">
             <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop"
                  alt="Time Value of Money"
                  class="material-image"
@@ -1441,28 +1750,6 @@
                 View Manual
               </a>
             </div>
-          </article>
-
-          <article class="material-card" data-page="6">
-            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop"
-                 alt="MLOps Basics"
-                 class="material-image"
-                 loading="lazy">
-            <h3 class="material-title">MLOps Basics</h3>
-            <p class="material-description">Machine Learning Operations fundamentals:</p>
-            <ul class="material-topics">
-              <li>CI/CD for ML</li>
-              <li>Model Versioning</li>
-              <li>Automated Testing</li>
-              <li>Production Monitoring</li>
-            </ul>
-            <a href="documents/ia/MLops_basico.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="material-link"
-               aria-label="View MLOps Basics guide">
-              View Guide
-            </a>
           </article>
 
           <!-- Negotiation and Uncertainty -->
@@ -1563,7 +1850,7 @@
             </div>
           </article>
 
-          <article class="material-card" data-page="7">
+          <article class="material-card" data-page="6">
             <img src="https://images.unsplash.com/photo-1573167243872-43c6433b9d40?w=400&h=300&fit=crop"
                  alt="Negotiation Class"
                  class="material-image"
